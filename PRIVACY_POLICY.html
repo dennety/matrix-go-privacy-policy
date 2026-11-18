@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade / Privacy Policy — Matrix Go</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: #0f172a;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+    .lang-btn {
+      background: rgba(255,255,255,0.06);
+      color: #cbd5e1;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .lang-btn:hover {
+      background: #0284c7;
+      color: #fff;
+    }
+    h1, h2, h3 { color: #ffffff; }
+    h1 { font-size: 26px; margin-top: 0; }
+    h2 { font-size: 19px; margin-top: 30px; color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 6px; }
+    p, li { font-size: 14.5px; color: var(--text-muted); }
+    strong { color: #ffffff; }
+    table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14px; }
+    th, td { padding: 12px 14px; border: 1px solid var(--border); text-align: left; }
+    th { background: rgba(56, 189, 248, 0.12); color: var(--accent); }
+    .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12.5px; font-weight: 700; background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .divider { margin: 50px 0; border: 0; height: 1px; background: rgba(255,255,255,0.12); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switcher">
+      <a href="#pt" class="lang-btn">🇧🇷 Português (Brasil)</a>
+      <a href="#en" class="lang-btn">🇺🇸 English (Official)</a>
+    </div>
+
+    <!-- SEÇÃO PORTUGUÊS -->
+    <div id="pt">
+      <h1>Política de Privacidade — Matrix Go</h1>
+      <p><em>Última atualização: 18 de Novembro de 2026</em> <span class="badge">100% Local • Sem Rastreamento • LGPD</span></p>
+
+      <p>A presente Política de Privacidade descreve como a extensão de navegador <strong>Matrix Go - Personalização Visual & CRM</strong> lida com as informações dos usuários. Nosso compromisso fundamental é a privacidade e a segurança: <strong>não coletamos, não armazenamos em servidores externos, não transmitimos e não comercializamos quaisquer dados pessoais ou de navegação dos usuários</strong>.</p>
+
+      <h2>1. Escopo e Propósito Único</h2>
+      <p>O propósito único e exclusivo do <strong>Matrix Go</strong> é fornecer personalização visual e melhorias ergonômicas de interface para operadores em plataformas de CRM e atendimento baseadas na web (como o CRM Matrix), incluindo personalização de tipografia (Google Fonts), temas cromáticos (Dark Mode, OLED, Cyberpunk), modo de exibição em três colunas (Split View) e modo privacidade em tela.</p>
+
+      <h2>2. Coleta de Dados e Armazenamento</h2>
+      <ul>
+        <li><strong>Dados Pessoais:</strong> A extensão NÃO coleta, não solicita e não armazena nomes, e-mails, senhas, documentos, telefones ou mensagens de clientes.</li>
+        <li><strong>Armazenamento Estritamente Local:</strong> Todas as preferências visuais escolhidas pelo operador são salvas exclusivamente no armazenamento local do navegador (<code>chrome.storage.local</code>). Nenhum dado sai do seu dispositivo.</li>
+        <li><strong>Zero Rastreamento / Sem Telemetria:</strong> Não utilizamos Google Analytics, cookies de rastreamento, pixels, telemetria oculta ou ferramentas de profiling.</li>
+      </ul>
+
+      <h2>3. Justificativa das Permissões Técnicas</h2>
+      <table>
+        <thead>
+          <tr><th>Permissão</th><th>Finalidade Técnica</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>storage</code></td><td>Salva localmente as preferências de cores, fontes e temas na máquina do usuário.</td></tr>
+          <tr><td><code>activeTab</code></td><td>Permite interagir com a aba do CRM ativa para alternar estilos e atalhos em tempo real.</td></tr>
+          <tr><td><code>scripting</code></td><td>Injeta dinamicamente as folhas de estilo CSS personalizadas na página do CRM autorizado.</td></tr>
+          <tr><td><code>tabs</code></td><td>Lê o domínio da aba atual para validar se está na lista de sites autorizados (whitelist).</td></tr>
+          <tr><td><code>host_permissions</code></td><td>Permite ao operador ativar a extensão no domínio específico de seu CRM corporativo. A extensão só age em sites expressamente autorizados pelo próprio usuário.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. Conformidade com Manifest V3</h2>
+      <p>A extensão segue integralmente as normas do Google Manifest V3, não utilizando nenhuma forma de código remoto executável (como <code>eval</code> ou scripts carregados dinamicamente de servidores externos).</p>
+
+      <h2>5. Proteção de Dados (LGPD)</h2>
+      <p>O Matrix Go oferece recursos ativos de segurança para operadores, incluindo o desfoque visual de dados sensíveis na tela (Atalho: <code>Alt+Shift+P</code>), auxiliando empresas na conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ENGLISH SECTION FOR GOOGLE REVIEWERS -->
+    <div id="en">
+      <h1>Privacy Policy — Matrix Go (English)</h1>
+      <p><em>Last updated: November 18, 2026</em> <span class="badge">100% Local • No Tracking • GDPR / LGPD</span></p>
+
+      <p>This Privacy Policy describes how the <strong>Matrix Go - Visual Customizer & CRM</strong> browser extension handles user information. Our primary commitment is user privacy: <strong>we do not collect, store on external servers, transmit, or monetize any personal or browsing data</strong>.</p>
+
+      <h2>1. Single Purpose</h2>
+      <p>The single and exclusive purpose of <strong>Matrix Go</strong> is to provide client-side visual customization, layout ergonomics, and accessibility enhancements for operators using web-based CRM and customer support platforms (such as Matrix CRM), including typography adjustments (Google Fonts), custom chromatic themes, 3-column split view workspace, and on-screen privacy blur mode.</p>
+
+      <h2>2. Data Handling & Storage</h2>
+      <ul>
+        <li><strong>Personal Data:</strong> The extension DOES NOT collect, request, or store names, emails, passwords, customer phone numbers, documents, or message contents.</li>
+        <li><strong>Strictly Local Storage:</strong> All visual preferences selected by the operator (colors, fonts, theme presets, whitelist domains) are stored locally using <code>chrome.storage.local</code>. No data ever leaves the user's computer.</li>
+        <li><strong>No Telemetry / No Analytics:</strong> We do not use Google Analytics, tracking cookies, web beacons, or third-party profiling services.</li>
+      </ul>
+
+      <h2>3. Technical Permissions Justifications</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Technical Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>storage</code></td><td>Saves user aesthetic preferences and whitelist configuration locally on the device.</td></tr>
+          <tr><td><code>activeTab</code></td><td>Enables popup interaction with the active CRM tab to toggle styles without reloading.</td></tr>
+          <tr><td><code>scripting</code></td><td>Dynamically injects customized CSS stylesheets into authorized CRM pages.</td></tr>
+          <tr><td><code>tabs</code></td><td>Reads active tab domain to verify authorization against the user's internal whitelist.</td></tr>
+          <tr><td><code>host_permissions</code></td><td>Allows the operator to enable styling on their company's custom CRM domain. The extension never runs on unauthorized websites.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. Manifest V3 & Security</h2>
+      <p>The extension is fully compliant with Google Chrome Web Store Developer Policies, containing zero remote code execution, no eval statements, and no external scripts.</p>
+    </div>
+  </div>
+</body>
+</html>
